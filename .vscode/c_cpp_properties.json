@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/8_1_0_i686_w64_posix_dwarf_rt_v6_rev0",
+                "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "MBCS",
+                "_MBCS"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x86",
+            "compilerArgs": [
+                "-DDX_GCC_COMPILE",
+                "-DDX_NON_INLINE_ASM"
+            ]
+        }
+    ],
+    "version": 4
+}
