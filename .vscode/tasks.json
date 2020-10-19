@@ -20,7 +20,7 @@
             "args": [
                 "-g",
                 "-c",
-                "sample.cpp",
+                "main.cpp",
                 "-I/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/include",
                 "-I/8_1_0_i686_w64_posix_dwarf_rt_v6_rev0",
                 "-I",
@@ -38,7 +38,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "sample.o",
+                "main.o",
                 "-mwindows",
                 "-L/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/lib",
                 "-L/8_1_0_i686_w64_posix_dwarf_rt_v6_rev0",
@@ -61,7 +61,7 @@
                 "-lsilk_common",
                 "-lcelt",
                 "-o",
-                "main.exe"
+                "9shogi.exe"
             ],
             "problemMatcher": [
                 "$gcc"
