@@ -9,6 +9,8 @@ int WINAPI WinMain( HINSTANCE hInstance , HINSTANCE hPrevInstance , LPSTR lpCmdL
     if(DxLib_Init() == 1){return -1;}//初期化に失敗時にエラーを吐かせて終了
 
     int backImage = LoadGraph("images/field.png");
+    int enemyImage = LoadGraph("images/enemy.png");
+    int playerImage = LoadGraph("images/player.png");
 
     while( ProcessMessage()==0 )
     {
@@ -16,6 +18,8 @@ int WINAPI WinMain( HINSTANCE hInstance , HINSTANCE hPrevInstance , LPSTR lpCmdL
         SetDrawScreen( DX_SCREEN_BACK ) ;//描画先を裏画面に
 
         DrawGraph(0, 0, backImage, FALSE);
+        DrawGraph(210, 10, enemyImage, FALSE);
+        DrawGraph(210, 410, playerImage, FALSE);
 
         ScreenFlip();//裏画面を表画面にコピー
     }
